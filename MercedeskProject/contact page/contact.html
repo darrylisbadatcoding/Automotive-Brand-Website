@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="script.js" defer></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <section id="nav">
+        <div class="container">
+            <nav>
+                <ul class="sidebar">
+                    <li class="closebutton" onclick="hideSidebar()">
+                        <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                        </span>
+                    </li>
+                    <li><a href="../ModelPage/model-page.html">Models</a></li>
+                    <li><a href="../f1 page/f1page.html">Our Formula team</a></li>
+                    <li><a href="../Contributions page/Team.html">Contributors</a></li>
+                </ul>
+                <ul>
+                    <li class="menubutton" onclick="showSidebar()">
+                        <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                        </span>
+                    </li>
+                    <li class="hideOnMobile"><a href="../ModelPage/model-page.html" class="vbar" >Models</a></li>
+                    <li class="hideOnMobile"><a href="../f1 page/f1page.html" class="vbar" >Our Formula team</a></li>
+                    <li class="hideOnMobile"><a href="../Contributions page/Team.html" class="vbar" >Contributors</a></li>
+                    <li class="logoposition"><a href="../Home page/home.html"><img class="logo" src="Mercedesk-transparent.png" alt="Mlogo"></a></li>
+                    <li class="user" onclick="showUserOption()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></li>
+                 </ul>
+            </nav>
+            <div class="userOption">
+                <h2>Welcome to Mercedesk <br> family</h2>
+                <button class="login">Login</button>
+                <button class="signup">Sign up</button>
+            </div>
+            </div>
+    </section>
+    <section id="contactpage">
+        <div class="contactform">
+        <h1>Mercedesk Company Contact Form</h1>
+        <p>Please use this form to ask any questions about the Mercedesk Company and any of its products and/or services. We will connect you to the appropriate department's customer representative, who will contact the email submitted to provide the assistance you need.</p>
+
+        <form action="../Home page/home.html" method="post" onsubmit="alert('Your message has been sent. Please allow us 2 to 3 business days to send you a response, thank you for your patience.')">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="radio-group">
+                <label>Purpose of contact:</label>
+                <label><input type="radio" name="purpose" value="technical" required> Technical Information</label>
+                <label><input type="radio" name="purpose" value="financial"> Financial Information</label>
+                <label><input type="radio" name="purpose" value="maintenance"> Maintenance Information</label>
+                <label><input type="radio" name="purpose" value="service"> Service Information</label>
+                <label><input type="radio" name="purpose" value="story"> Story Submission</label>
+            </div>
+
+            <label for="inquiry">Inquiry:</label>
+            <textarea id="inquiry" name="inquiry" placeholder="How can we help you?" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </section>
+</body>
+</html>

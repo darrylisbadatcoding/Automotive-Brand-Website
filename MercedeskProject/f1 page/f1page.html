@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="f1hero.css">
+    <link rel="stylesheet" href="driver.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="script.js" defer></script>
+    <script src="f1hero.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="f1 page">
+        <section id="nav">
+            <div class="container">
+                <nav>
+                    <ul class="sidebar">
+                        <li class="closebutton" onclick="hideSidebar()">
+                            <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                            </svg>
+                            </span>
+                        </li>
+                        <li><a href="../ModelPage/model-page.html">Models</a></li>
+                        <li><a href="../f1 page/f1page.html">Our Formula team</a></li>
+                        <li><a href="../Contributions page/Team.html">Contributors</a></li>
+                    </ul>
+                    <ul>
+                        <li class="menubutton" onclick="showSidebar()">
+                            <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                            </svg>
+                            </span>
+                        </li>
+                        <li class="hideOnMobile"><a href="../ModelPage/model-page.html" class="vbar" >Models</a></li>
+                        <li class="hideOnMobile"><a href="../f1 page/f1page.html" class="vbar" >Our Formula team</a></li>
+                        <li class="hideOnMobile"><a href="../Contributions page/Team.html" class="vbar" >Contributors</a></li>
+                        <li class="logoposition"><a href="../Home page/home.html"><img class="logo" src="Mercedesk-transparent.png" alt="Mlogo"></a></li>
+                        <li class="user" onclick="showUserOption()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></li>
+                     </ul>
+                </nav>
+                <div class="userOption">
+                    <h2>Welcome to Mercedesk <br> family</h2>
+                    <button class="login" onclick="location.href='../LoginRegisterPage/login-page.html'">Login</button>
+                    <button class="signup" onclick="location.href='../LoginRegisterPage/register-page.html'">Sign up</button>
+                </div>
+                </div>
+        </section>
+        <section id="hero">
+            <div class="slider">
+                <div class="slides">
+                    <img src="trackrun.png" alt="Image 1">
+                    <img src="trackrun2.png" alt="Image 2">
+                    <img src="Lasvegaslivery.png" alt="Image 3">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+        <h1 class="driverh1">Meet our drivers</h1>
+        <section id="drivers">
+            <div class="driver">
+                <div class="dnumber">16</div>
+                <img src="aless.png">
+                <div class="driverinfo">
+                    <h3>Alessandro De Luca</h3>
+                    <p>Official driver</p>
+                </div>
+            </div>
+            <div class="driver">
+                <div class="dnumber">55</div>
+                <img src="Izan.png">
+                <div class="driverinfo">
+                    <h3>Izan Nakamura</h3>
+                    <p>Official driver</p>
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="newscontainer">
+                <div class="title">News</div>
+                <div class="maintitle">Latest News</div>
+                <div class="newsgrid">
+                    <div class="newsitem">
+                        <img src="qatarrace.png">
+                        <div class="content">
+                            <div class="newsdate">3 Days — Qatar GP</div>
+                            <div class="newstitle">By a few thousandths</div>
+                        </div>
+                    </div>
+                    <div class="newsitem">
+                        <img src="izanthird.png">
+                        <div class="content">
+                            <div class="newsdate">3 Days — Qatar GP</div>
+                            <div class="newstitle">Nakamura finishes third</div>
+                        </div>
+                    </div>
+                    <div class="newsitem">
+                        <img src="alesscrash.png">
+                        <div class="content">
+                            <div class="newsdate">3 Days — Qatar GP</div>
+                            <div class="newstitle">Alessandro dnf</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="footer_container">
+              <button id="jumpToTop" class="jump-to-top">↑</button>
+              <div class="row">
+                <div class="footercol">
+                  <h4>Products</h4>
+                  <ul>
+                    <li><a href="../ModelPage/model-page.html">Explore vehicles</a></li>
+                  </ul>
+                </div>
+                <div class="footercol">
+                  <h4>Services</h4>
+                  <ul>
+                    <li><a href="../contact page/contact.html">Contact support</a></li>
+                  </ul>
+                </div>
+                <div class="footercol">
+                  <h4>Mercedesk</h4>
+                  <ul>
+                    <li><a href="../Contributions page/Team.html">About Us</a></li>
+                    <li><a href="../f1 page/f1page.html">Mercedesk Motorsports</a></li>
+                    <li><a href="../magazine page/Magazine.html">Mercedesk Magazine</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+</body>
+</html>

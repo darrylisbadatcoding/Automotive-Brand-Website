@@ -1,0 +1,62 @@
+
+#contributionspart div {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.shaun, .ahnaf, .darryl {
+    flex-direction: column;
+    background-color: hsl(251, 25%, 14%);
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.ahnaf {
+    background-color: hsl(253, 25%, 18%);
+}
+
+.darryl {
+    background-color: hsl(259, 25%, 27%);
+}
+
+.pictureDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDiv {
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.textDiv p {
+    font-size: larger;
+}
+
+#contributionspart img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .textDiv p {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 576px) {
+    img {
+        max-width: 80%;
+    }
+
+    .textDiv p {
+        font-size: small;
+    }
+}
